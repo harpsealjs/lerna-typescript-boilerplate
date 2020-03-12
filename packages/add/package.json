@@ -7,9 +7,9 @@
   "types": "lib/index.d.ts",
   "scripts": {
     "test": "../../node_modules/.bin/jest --config ../../jest.config.json --rootDir ./",
-    "watch": "../../node_modules/.bin/tsc --watch",
-    "clean": "rm -rf ./lib && rm -rf ./dist",
-    "build-lib": "../../node_modules/.bin/tsc",
+    "watch": "../../node_modules/.bin/tsc -p ./tsconfig.build.json --watch",
+    "clean": "rm -rf ./lib && rm -rf ./dist && rm -rf ./coverage",
+    "build-lib": "../../node_modules/.bin/tsc -p ./tsconfig.build.json",
     "build-dist": "../../node_modules/.bin/babel src --out-dir dist --extensions \".ts,.tsx\" --source-maps inline",
     "build": "npm run clean && npm run build-lib && npm run build-dist"
   },

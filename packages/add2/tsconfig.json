@@ -3,12 +3,12 @@
 	"compilerOptions": {
 		"baseUrl": ".",
 		"outDir": "lib",
-		"rootDir": "src",
+		"rootDir": ".",
 		"paths": {
 			"@/*": ["./src/*"],
 			"@harpsealjs/*": ["../*"]
 		}
 	},
-	"include": ["./src/**/*"],
-	"exclude": ["./node_modules/**/*", "dist", "lib", "test"]
+	"include": ["./src/**/*", "./test/**/*"],
+	"exclude": ["./node_modules/**/*", "./dist/**/*", "./lib/**/*"]
 }

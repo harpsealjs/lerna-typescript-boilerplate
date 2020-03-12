@@ -17,7 +17,7 @@
     "@svgr/webpack": "^5.1.0",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/user-event": "^7.1.2",
-    "@types/jest": "^24.0.0",
+    "@types/jest": "^24.9.1",
     "@types/node": "^12.12.29",
     "@typescript-eslint/eslint-plugin": "2.x",
     "@typescript-eslint/parser": "2.x",
@@ -29,6 +29,7 @@
     "eslint-plugin-jest": "^23.8.2",
     "eslint-plugin-jsx-a11y": "6.x",
     "jest": "^25.1.0",
+    "ts-jest": "^25.2.1",
     "typedoc": "^0.16.11",
     "typedoc-plugin-lerna-packages": "^0.3.0",
     "typescript": "^3.8.3"

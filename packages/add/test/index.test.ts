@@ -1,4 +1,4 @@
-import { add } from '../lib/index';
+import { add } from '../src/index';
 
 describe('it works!', () => {
   it('1 + 2 = 3', () => {
