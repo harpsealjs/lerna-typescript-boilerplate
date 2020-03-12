@@ -1,0 +1,31 @@
+{
+	"compileOnSave": false,
+	"buildOnSave": false,
+	"compilerOptions": {
+		"baseUrl": ".",
+		"declaration": true,
+		"outDir": "lib",
+		"module": "esnext",
+		"target": "es6",
+		"jsx": "react",
+		"moduleResolution": "node",
+		"allowSyntheticDefaultImports": true,
+		"lib": ["es6", "dom", "dom.iterable"],
+		"sourceMap": false,
+		"forceConsistentCasingInFileNames": true,
+		"noImplicitReturns": true,
+		"noImplicitThis": true,
+		"noImplicitAny": false,
+		"importHelpers": true,
+		"strictNullChecks": true,
+		"suppressImplicitAnyIndexErrors": true,
+		"noUnusedLocals": true,
+		"skipLibCheck": true,
+		"paths": {
+			"@/*": ["./src/*"],
+			"@harpsealjs/*": ["./packages/*"]
+		}
+	},
+	"exclude": ["./node_modules/**/*", "./scripts/**/*"]
+}
+

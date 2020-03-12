@@ -1,0 +1,13 @@
+{
+	"extends": "../../tsconfig",
+	"compilerOptions": {
+		"outDir": "lib",
+		"rootDir": "src",
+		"paths": {
+			"@/*": ["./src/*"],
+			"@harpsealjs/*": ["../*"]
+		}
+	},
+	"include": ["./src/**/*"],
+	"exclude": ["./node_modules/**/*", "dist", "lib", "test"]
+}

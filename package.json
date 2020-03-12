@@ -1,0 +1,48 @@
+{
+  "version": "0.0.1",
+  "scripts": {
+    "doc": "./node_modules/.bin/typedoc",
+    "test": "lerna run test",
+    "watch": "lerna run --parallel watch",
+    "clean": "lerna run clean",
+    "build": "lerna run build",
+    "publish": "lerna publish"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/code-frame": "7.8.3",
+    "@babel/core": "7.8.4",
+    "@babel/preset-env": "^7.8.4",
+    "@babel/preset-typescript": "^7.8.3",
+    "@svgr/webpack": "^5.1.0",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/user-event": "^7.1.2",
+    "@types/jest": "^24.0.0",
+    "@types/node": "^12.12.29",
+    "@typescript-eslint/eslint-plugin": "2.x",
+    "@typescript-eslint/parser": "2.x",
+    "babel-jest": "^25.1.0",
+    "del": "^5.1.0",
+    "eslint": "6.x",
+    "eslint-plugin-flowtype": "3.x",
+    "eslint-plugin-import": "2.x",
+    "eslint-plugin-jest": "^23.8.2",
+    "eslint-plugin-jsx-a11y": "6.x",
+    "jest": "^25.1.0",
+    "typedoc": "^0.16.11",
+    "typedoc-plugin-lerna-packages": "^0.3.0",
+    "typescript": "^3.8.3"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/harpsealjs/lerna-typescript-boilerplate.git"
+  }
+}

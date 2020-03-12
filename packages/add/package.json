@@ -1,0 +1,35 @@
+{
+  "name": "@harpsealjs/add",
+  "version": "0.0.1",
+  "description": "An easy add",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "test": "../../node_modules/.bin/jest",
+    "watch": "../../node_modules/.bin/tsc --watch",
+    "clean": "rm -rf ./lib && rm -rf ./dist",
+    "build-lib": "../../node_modules/.bin/tsc",
+    "build-dist": "../../node_modules/.bin/babel src --out-dir dist --extensions \".ts,.tsx\" --source-maps inline",
+    "build": "npm run clean && npm run build-lib && npm run build-dist"
+  },
+  "files": [
+    "dist",
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/harpsealjs/lerna-typescript-boilerplate.git"
+  },
+  "bugs": {
+    "url": "https://github.com/harpsealjs/lerna-typescript-boilerplate/issues"
+  },
+  "engines": {
+    "npm": ">=8.0.0"
+  },
+  "dependencies": {},
+  "publishConfig": {
+    "access": "public"
+  },
+  "homepage": "https://github.com/harpsealjs/lerna-typescript-boilerplate"
+}

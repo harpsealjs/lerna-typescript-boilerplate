@@ -1,0 +1,8 @@
+{
+  "mode": "modules",
+  "out": "docs/code",
+  "exclude": ["**/node_modules/**", "**/*.d.ts"],
+  "plugin": "typedoc-plugin-lerna-packages",
+  "name": "lerna-typescript-boilerplage",
+  "excludePrivate": true
+}
