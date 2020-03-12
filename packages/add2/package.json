@@ -1,7 +1,7 @@
 {
-  "name": "@harpsealjs/add",
+  "name": "@harpsealjs/add2",
   "version": "0.0.1",
-  "description": "An easy add",
+  "description": "An easy add twice",
   "license": "MIT",
   "main": "dist/index.js",
   "types": "lib/index.d.ts",
@@ -27,7 +27,9 @@
   "engines": {
     "npm": ">=8.0.0"
   },
-  "dependencies": {},
+  "dependencies": {
+    "@harpsealjs/add": "^0.0.1"
+  },
   "publishConfig": {
     "access": "public"
   },

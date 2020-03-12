@@ -22,7 +22,6 @@
 		"noUnusedLocals": true,
 		"skipLibCheck": true,
 		"paths": {
-			"@/*": ["./src/*"],
 			"@harpsealjs/*": ["./packages/*"]
 		}
 	},
