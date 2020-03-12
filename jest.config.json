@@ -3,7 +3,7 @@
 	"collectCoverage": true,
 	"coverageReporters": ["lcov", "json"],
 	"collectCoverageFrom": [
-		"**/src/**"
+		"**/lib/**"
 	],
 	"testRegex": "(/tests?/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
 	"moduleFileExtensions": [
