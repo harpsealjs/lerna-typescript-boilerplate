@@ -23,6 +23,8 @@ Use npm scripts
 
 ## Documentation
 
+[see docs](https://harpsealjs.github.io/lerna-typescript-boilerplate/)
+
 ## License
 
 The MIT License (MIT)
