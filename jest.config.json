@@ -15,8 +15,8 @@
 		"jsx",
 		"json",
 		"node"
-  ],
-  "moduleNameMapper": {
-  	"@harpsealjs/(.*)": "<rootDir>/../$1"
-  }
+	],
+	"moduleNameMapper": {
+		"@harpsealjs/(.*)": "<rootDir>/../$1"
+	}
 }

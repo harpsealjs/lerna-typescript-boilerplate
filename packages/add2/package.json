@@ -4,18 +4,19 @@
   "description": "An easy add twice",
   "license": "MIT",
   "main": "dist/index.js",
-  "types": "lib/index.d.ts",
+  "types": "dist/index.d.ts",
   "scripts": {
     "test": "../../node_modules/.bin/jest --config ../../jest.config.json --rootDir ./",
-    "watch": "../../node_modules/.bin/tsc -p ./tsconfig.build.json --watch",
-    "clean": "rm -rf ./lib && rm -rf ./dist && rm -rf ./coverage",
-    "build-lib": "../../node_modules/.bin/tsc -p ./tsconfig.build.json",
+    "clean": "rm -rf ./dist && rm -rf ./coverage",
+    "build-lib": "../../node_modules/.bin/tsc -p ./tsconfig.build.json --emitDeclarationOnly",
     "build-dist": "../../node_modules/.bin/babel src --out-dir dist --extensions \".ts,.tsx\" --source-maps inline",
-    "build": "npm run clean && npm run build-lib && npm run build-dist"
+    "build": "npm run clean && npm run build-lib && npm run build-dist",
+    "watch-lib": "../../node_modules/.bin/tsc -p ./tsconfig.build.json --watch --emitDeclarationOnly",
+    "watch-dist": "../../node_modules/.bin/babel src --out-dir dist --watch  --extensions \".ts,.tsx\" --source-maps inline",
+    "watch": "../../node_modules/.bin/npm-run-all --parallel watch-lib watch-dist"
   },
   "files": [
-    "dist",
-    "lib"
+    "dist"
   ],
   "repository": {
     "type": "git",

@@ -4,11 +4,12 @@
 	"compilerOptions": {
 		"baseUrl": ".",
 		"declaration": true,
-		"outDir": "lib",
+		"outDir": "dist",
 		"module": "esnext",
 		"target": "es6",
 		"jsx": "react",
 		"moduleResolution": "node",
+		"typeRoots": ["node_modules/@types"],
 		"allowSyntheticDefaultImports": true,
 		"lib": ["es6", "dom", "dom.iterable"],
 		"sourceMap": false,
@@ -27,4 +28,3 @@
 	},
 	"exclude": ["./node_modules/**/*", "./scripts/**/*"]
 }
-
